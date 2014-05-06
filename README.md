@@ -1,7 +1,9 @@
 # docker-augustus Docker image
 
-## Maintainer - Timothy Laurent
+#### Maintainer - Timothy Laurent
 
+#Intro
+This allows the use of the [Augustus gene modelling suite ](http://bioinf.uni-greifswald.de/augustus/) with Docker through a simple CLI command.
 
 #How to use
 
