@@ -13,6 +13,10 @@ This allows the use of the [Augustus gene modelling suite ](http://bioinf.uni-gr
 ```
 docker run -v <path to data>:/data:rw -v <path to config e.g.'`pwd`/config' >:/config  tlaurent/docker-augustus <augustus command> [options]
 ```
+3. You can also just enter the container's shell like so:
+```
+docker run -v <path to data>:/data:rw -v <path to config e.g.'`pwd`/config' >:/config  tlaurent/docker-augustus bash
+```
 
 - all data input and output should happen in the mounted volumes and remember that as far as the container is concerned your directories are mounted at the mount points.
     
