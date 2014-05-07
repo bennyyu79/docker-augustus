@@ -10,13 +10,13 @@ This allows the use of the [Augustus gene modelling suite ](http://bioinf.uni-gr
 1. First clone the github repo in your working dirctory: `git clone https://github.com/timothyjlaurent/docker-augustus.git`
 2. The git clone will pull the Augustus config folder to your machine. The image is configured so that the `AUGUSTUS_CONFIG_PATH` environment variable is set to `/config`. There is also a volume `/data` that can be used to mount your data directories. The default command will be this :
 
-```
-docker run -v <path to data>:/data:rw -v <path to config e.g.'`pwd`/config' >:/config  tlaurent/docker-augustus <augustus command> [options]
-```
+    ```
+    docker run -v <path to data>:/data:rw -v <path to config e.g.'`pwd`/config' >:/config  tlaurent/docker-augustus     <augustus command> [options]
+    ```
 3. You can also just enter the container's shell like so:
-```
-docker run -v <path to data>:/data:rw -v <path to config e.g.'`pwd`/config' >:/config  tlaurent/docker-augustus bash
-```
+    ```
+    docker run -v <path to data>:/data:rw -v <path to config e.g.'`pwd`/config' >:/config  tlaurent/docker-augustus bash
+    ```
 
 - all data input and output should happen in the mounted volumes and remember that as far as the container is concerned your directories are mounted at the mount points.
     
